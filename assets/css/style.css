@@ -1,0 +1,525 @@
+/*
+    FONTS
+*/
+
+@font-face {
+	font-family: 'AGENCYB';
+	src: url('./fonts/AGENCYB.eot');
+	src: local('AGENCYB'), url('./fonts/AGENCYB.woff') format('woff'), url('./fonts/AGENCYB.ttf') format('truetype');
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+   color:#000;
+   text-decoration: none; 
+}
+
+body{
+    background: url(../img/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'AGENCYB' !important;
+}
+
+.space10{
+    height: 10px;
+}
+.space20{
+    height: 20px;
+}
+.space30{
+    height: 30px;
+}
+.space40{
+    height: 40px;
+}
+.space50{
+    height: 50px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* NAV BAR */
+.myNav{
+    position: fixed;
+    top:0;
+    background-color: #fff;
+    min-height: 79px;
+    width: 100%;
+    z-index: 9999;
+}
+.menu{
+    list-style: none;
+    margin:0;
+    padding:0;
+    display:block;
+    width: 50%;
+    float: left;
+    font-size: 22px;
+}
+.menu li {
+   display: inline-block;
+   vertical-align: middle;
+}
+.menu > li > a {
+    display: inline-block;
+    padding:1.5rem;
+    font-family: 'AGENCYB' !important;
+ }
+
+.rightUserMenu{
+    width: 50%;
+    display: block;
+    float: right;
+    text-align: right;
+    min-height: 66px;
+}
+.rightUserMenu a{
+    padding: 1.5rem;
+    display: block;
+}
+.main{
+    margin-top: 100px;
+}
+
+.menu li {
+    float: left;
+}
+.menu > li > ul > li a, .dropbtn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+.menu-item:hover{
+    border-bottom: 4px solid rgba(0, 0, 0, 0.568);
+}
+.menu > li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000d4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: #000000d7;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .menu-item {
+    border-bottom: 4px solid rgba(0, 0, 0, 0.568);
+}
+
+/*  ESTILO DA HOMEPAGE */
+.home{
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top: 35%;
+}
+.logo{
+    width: 30%;
+    padding: 1.5rem;
+}
+.titulo{
+    width: 70%;
+    padding: 1.5rem;
+}
+.titulo h1{
+    font-size: 4rem;
+}
+/* ESTILO DO LOGIN */
+
+.formLogin{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+}
+.formLogin form{
+    margin-bottom: 3rem;
+}
+.formLoginHeader{
+    background-color:#1B1B1B;
+    color:#fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+.formLoginHeader h1{
+    color:#fff;
+    padding: 1.5rem;
+}
+.formLoginHeader h4{
+    color:#fff;
+    font-weight: 300;
+    padding: 1.5rem;
+}
+.formLoginBody{
+    background-color: #fff;
+    padding: 1.5rem;
+}
+.formGroup{
+    width: 100%;
+}
+.formGroup > label{
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+.formGroup > input{
+    width: -webkit-fill-available;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+}
+.formGroup > button{
+    margin-top: 1.5rem;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: 0;
+    background-color: #EF485A;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* ESTILO PARA PAGINAS */
+.page{
+    width: 1025px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fffffff2;
+    min-height: 60vh;
+    padding: 55px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.pageContent{
+    overflow: hidden;
+}
+.pageTitle h1{
+    font-size: 5rem;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.listLinks{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.listLinks li{
+    margin-bottom: 25px;
+}
+.listLinks a{
+    width: 100%;
+    display: block;
+    color:red;
+    text-decoration: underline;
+}
+.servicosAdministrativos{
+    margin-top: 50px;
+}
+.column{
+    width: 50%;
+    float: left;
+}
+.infoPlace{
+    overflow: hidden;
+}
+
+/* ACORDIAO */
+h2.accordion{ 
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    background-color: #BDBDBD;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 300;
+}
+div.accordion{ display: none; margin-top: -20px;}
+div.accordion table{
+    width: 100%;
+    text-align: center;
+    border-collapse:separate; 
+    border-spacing: 0 15px; 
+}
+.grid{
+    display: grid;
+    grid-template-columns: 33.3333333333% 33.3333333333% 33.3333333333%;
+    grid-auto-rows: 22rem;
+    margin-bottom: 5em;
+}
+.gridItem{
+    padding:25px;
+    padding-top: 0px;
+}
+.gridItem img{
+   width: 100%;
+}
+.gridItemText{
+    text-align: center;
+}
+.gridItemText h5{
+    padding-top: 5px;
+    color:#F8981D;
+    margin:0;
+}
+.gridItemText p{
+    margin:0;
+    font-size: 13px;
+    font-weight: 700;
+}
+.feed{
+    width: 1135px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 50vh;
+}
+.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+p { margin: 0 0 10px 0; }
+
+.tabs { list-style: none; }
+.tabs li { display: inline; }
+.tabs li a { color: black; float: left; display: block; padding: 4px 10px; margin-left: -1px; position: relative; left: 1px; background: white; text-decoration: none; }
+.tabs li a:hover { background: #ccc; }
+
+
+#ie-test { position: relative; width: 100%; }
+#boxLinks {     
+    list-style: none;
+    overflow: hidden;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: #fff;
+    padding: 10px;
+}
+#boxLinks li {  display: inline; }
+#boxLinks li a { 
+    color: black;
+    text-decoration: none;
+    float: left;
+    display: block;
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+    width: 33.3333333333%;
+}
+#boxLinks li a:hover { 
+    color: #fff; 
+    background: #cecece; 
+}
+#box {
+    background-color: #fff; 
+    height: 100vh;
+    overflow: hidden; 
+    padding: 30px; 
+    position: relative; 
+    top: -1px; }
+.box { 
+    display: none; 
+    height: 110vh;
+    padding: 30px;
+    overflow: auto; 
+    display: block; 
+    position: relative; 
+    overflow-x: hidden; 
+}
+#box1:target, #box2:target, #box3:target { display: block; }
+.userName{
+    width: 70%;
+    float: left;
+}
+.userVotes{
+    width: 30%;
+    float: left;
+}
+.userBoard{
+    width: 1135px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.user{
+    width: 400px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    overflow: hidden;
+}
+.userImg{
+    width: 35%;
+    float: left;
+}
+.userDetails{
+    width: 65%;
+    float: left;
+    position: relative;
+    height: 120px;
+}
+.userDetails h4{
+    margin-bottom: 0;
+}
+.userDetails h1{
+    margin: 0;
+}
+
+.action{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.action button{
+    width: 100%;
+    padding: 10px;
+    background: #EEB76D;
+    border: 0;
+    font-weight: 700;
+}
+.article{
+    margin-bottom: 30px;
+}
+.articleHeader{
+    overflow: hidden;
+}
+.userArticleImg{
+    width: 12%;
+    float: left;
+}
+.articleDescription{
+    width: 76%;
+    float: left;
+}
+.articleUserVotes{
+    width: 12%;
+    float: left;
+}
+.articleBody img{
+    width: 100%;
+}
+.articleUserVotes img, .articleUserVotes span{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.userVotes img, .userVotes span{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/* mobile */
+@media only screen and (max-width: 1024px) {
+    .myNav {
+        min-height: 46px;
+    }
+    .menu {
+        width: 70%;
+        font-size: 17px;
+    }
+    .menu > li > a {
+        display: inline-block;
+        padding: 0.5rem;
+    }
+    .rightUserMenu {
+        width: 30%;
+        min-height: 46px;
+    }
+    .rightUserMenu a {
+        padding: 0.5rem;
+    }
+    .logo {
+        width: 40%;
+        padding: 0.5rem;
+       
+    }
+    .logo img{
+       width: 100%;
+    }
+    .titulo {
+        width: 60%;
+        padding: 0.5rem;
+        padding-top: 35px;
+    }
+    .titulo h1 {
+        font-size: 1rem;
+    }
+    .formLogin {
+        width: auto;
+    }
+    .feed {
+        width: 90%;
+    }
+    #box {
+        padding: 0px; 
+    }
+    .userBoard {
+        width: 90%;
+    }
+    .user {
+        width: auto;
+    }
+    .userImg img{ width: 90%;}
+    .userDetails {
+        height: 93px;
+    }
+    .userDetails h4 {
+        margin: 0;
+    }
+    .action button {
+        padding: 3px;
+    }
+    .userArticleImg img {width: 100%;}
+    .articleDescription h1{
+        margin: 0;
+        font-size: 16px;
+        padding: 0 5px 0 5px;
+    }
+    .articleDescription p{
+        margin: 0;
+        font-size: 12px;
+        padding: 0 5px 0 5px;
+    }
+    #boxLinks {
+        width: 94%;
+    }
+    .page {
+        width: 90%;
+        padding: 15px;
+    }
+    .pageTitle h1 {
+        font-size: 3rem;
+    }
+    .grid {
+        grid-template-columns: 100%;
+    }
+    .column {
+        width: 100%;
+    }
+}
